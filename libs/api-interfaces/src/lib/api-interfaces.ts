@@ -9,6 +9,7 @@
 export interface Card {
   id: number;
   name: string;
+  image: string;
 }
 
 export interface GemCard extends Card {
