@@ -1,9 +1,13 @@
 import * as express from 'express';
-import { Message } from '@gemxploding/api-interfaces';
+import * as helmet from 'helmet';
+import * as cors from 'cors';
 
 const app = express();
 
-const greeting: Message = { message: 'Welcome to api!' };
+app.use(helmet());
+app.use(cors());
+
+const greeting = { message: 'Welcome to api!' };
 
 app.get('/api', (req, res) => {
   res.send(greeting);
