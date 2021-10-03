@@ -19,6 +19,7 @@ export interface GemCard extends Card {
 export interface SpecialCard extends Card {
   onUse?: () => void;
   onDraw?: () => void;
+  onExplosion?: () => void;
 }
 
 export interface User {
