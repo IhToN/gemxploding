@@ -6,7 +6,7 @@
 // You should have received a copy of the license along with this
 // work. If not, see <http://creativecommons.org/licenses/by-nc/4.0/>.
 
-export * from './lib/api-interfaces';
-export * from './lib/socket-events';
-
-export * from './helpers/strings';
+export const NEW_GAME = 'game:new';
+export const JOIN_GAME = 'game:join';
+export const LEAVE_GAME = 'game:leave';
+export const START_GAME = 'game:start';

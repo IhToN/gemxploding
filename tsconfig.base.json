@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@gemxploding/api-interfaces": ["libs/api-interfaces/src/index.ts"]
-    }
+    },
+    // extra options
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "tmp"]
 }

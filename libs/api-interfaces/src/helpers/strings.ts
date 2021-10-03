@@ -6,7 +6,4 @@
 // You should have received a copy of the license along with this
 // work. If not, see <http://creativecommons.org/licenses/by-nc/4.0/>.
 
-export * from './lib/api-interfaces';
-export * from './lib/socket-events';
-
-export * from './helpers/strings';
+export const capitalize = (text: string) => `${text.charAt(0).toUpperCase}${text.slice(1)}`;

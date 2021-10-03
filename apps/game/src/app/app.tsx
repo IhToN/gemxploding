@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Message } from '@gemxploding/api-interfaces';
+import { Card } from '@gemxploding/api-interfaces';
 
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
+  const [m, setMessage] = useState<Card>({ id: 1, name: Test'' });
 
   useEffect(() => {
     fetch('/api')
@@ -20,7 +20,7 @@ export const App = () => {
           alt="Nx - Smart, Extensible Build Framework"
         />
       </div>
-      <div>{m.message}</div>
+      <div>{m.id}: {m.name}</div>
     </>
   );
 };
